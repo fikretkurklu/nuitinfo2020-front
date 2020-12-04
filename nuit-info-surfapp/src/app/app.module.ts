@@ -7,6 +7,7 @@ import { WebcamComponent } from './webcam/webcam.component';
 import { PageConnexionComponent } from './page-connexion/page-connexion.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+
 import { AcceuilComponent } from './acceuil/acceuil.component';
 
 import { PageInscriptionComponent } from './page-inscription/page-inscription.component';
@@ -24,6 +25,8 @@ import { SanteComponent } from './sante/sante.component';
 
 import { SensibilisationComponent } from './sensibilisation/sensibilisation.component';
 
+import { CompteurDechetsComponent } from './compteur-dechets/compteur-dechets.component';
+
 
 @NgModule({
   declarations: [
@@ -37,7 +40,8 @@ import { SensibilisationComponent } from './sensibilisation/sensibilisation.comp
     AcceuilComponent,
     WebcamComponent,
     MeteoComponent,
-    SensibilisationComponent
+    SensibilisationComponent,
+    CompteurDechetsComponent
 
   ],
   imports: [

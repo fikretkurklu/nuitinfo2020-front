@@ -9,7 +9,10 @@ import { NgForm } from '@angular/forms'
 
 export class SensibilisationComponent implements OnInit {
 
-  constructor() { }
+  compteurValue = 212030;
+
+  constructor() { 
+  }
 
   ngOnInit(): void {
   }
@@ -18,6 +21,15 @@ export class SensibilisationComponent implements OnInit {
     console.log(form.value['ville']);
     
 
+  }
+
+  updateCount() {
+    for(let i = 0; i<23540; i++){
+      this.compteurValue++;
+      if(this.compteurValue > 1000000){
+        this.compteurValue = 200;
+      }
+    }
   }
 
 }
