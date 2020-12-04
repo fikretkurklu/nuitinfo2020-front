@@ -7,6 +7,7 @@ import { AcceuilComponent } from './acceuil/acceuil.component';
 import { SanteComponent } from './sante/sante.component';
 import { photoprofilComponent } from './photoprofil/photoprofil.component';
 import { InfopageComponent } from './infopage/infopage.component';
+import { WebcamComponent } from './webcam/webcam.component';
 
 const routes: Routes = [
   { path : 'acceuil', component : AcceuilComponent },
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path : 'infopage', component : InfopageComponent },
   { path : 'register', component : PageInscriptionComponent},
   { path : 'page-connexion', component : PageConnexionComponent },
-  { path : 'page-inscription', component : PageInscriptionComponent }
+  { path : 'page-inscription', component : PageInscriptionComponent },
+  { path : 'webcam', component : WebcamComponent }
 ]
 
 @NgModule({

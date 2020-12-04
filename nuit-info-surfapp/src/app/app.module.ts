@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { WebcamComponent } from './webcam/webcam.component';
 
 import { PageConnexionComponent } from './page-connexion/page-connexion.component';
 import { FormsModule } from '@angular/forms';
@@ -30,7 +31,9 @@ import { SanteComponent } from './sante/sante.component';
     photoprofilComponent,
     InfopageComponent,
     SanteComponent,
-    AcceuilComponent
+    AcceuilComponent,
+    WebcamComponent
+
   ],
   imports: [
     BrowserModule,
