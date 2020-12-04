@@ -1,0 +1,41 @@
+form {
+    margin: 0 auto;
+    width: 600px;
+    padding: 1em;
+    border: 1px solid #ebc75e;
+    border-radius: 1em;
+  }
+
+  form div + div {
+    margin-top: 1em;
+  }
+
+  label {
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+  }
+
+  input, textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #00c4cc;
+  }
+
+  input:focus, textarea:focus {
+    border-color: #00c4cc;
+  }
+
+  textarea {
+    vertical-align: top;
+    height: 5em;
+  }
+
+  .form-group {
+    padding-left: 200px;
+  }
+
+  form-group {
+    margin-left: .5em;
+  }

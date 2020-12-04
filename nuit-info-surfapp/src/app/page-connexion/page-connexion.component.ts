@@ -16,6 +16,7 @@ export class PageConnexionComponent implements OnInit {
   }
 
   onSave(form: NgForm) {
+    console.log(form.value['email']);
     this.login.login(form.value['email'], form.value['password']);
   }
 

@@ -12,8 +12,8 @@ export class LoginIdentifiantService {
     this.http.post('http://localhost:8080/auth/login', {email, password})
     .subscribe(
       (response) => {
-        localStorage.setItem(email, response.toString());
-        console.log();
+        //localStorage.setItem(email, response.toString());
+        console.log(response);
       },
       (error) => {
         console.log('Erreur ! : ' + error);

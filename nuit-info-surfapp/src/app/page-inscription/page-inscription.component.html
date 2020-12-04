@@ -1,0 +1,48 @@
+<form (ngSubmit)="onSave(f)" id="inscription-form" #f="ngForm">
+    <div>
+        <label for="name"> Nom : </label>
+        <input type="text" id="name" name="name" ngModel required />
+    </div>
+    <div>
+        <label for="firstname">Prenom : </label>
+        <input type="text" id="firstname" name="firstname" ngModel required />
+    </div>
+    <div>
+        <label for="userName">Nom d'utilisateur :  </label>
+        <input type="test" id="userName" name="username" ngModel required />
+        
+    </div>
+    <div>
+        <label for="mail">e-mail : </label>
+        <input type="email" id="mail" name="email" ngModel required />
+    </div>
+    <div>
+        <label for="mdp">Mot de passe : </label><!--minimum 6 char-->
+        <input type="Password" id="Password" name="password" required ng-minlength="6" ngModel />
+    </div>
+    <div>
+        <label for="ConfirmPassword">Confirmation mot de passe : </label><!--ils doivent etre égaux-->
+        <input type="Password" id="ConfirmPassword" name="confPassword"  equals-to="registerForm.Password" ngModel required />
+        
+    </div>
+    <div>
+        <label for="nvsurf">Niveau surf : </label>
+        <select name="surfLevel" id="niveau" ngModel required>
+            <option value="0">débutant</option>
+            <option value="1">intermédiaire</option>
+            <option value="2">confirmé</option>
+            <!-- <option value="3">haut niveau</option> -->
+        </select>
+    </div>
+    <div>
+        <label for="ville">Ville : </label>
+        <input type="text" id="ville" name="city" ngModel required /> 
+    </div>
+    <!-- <div>
+        <label for="spotpref">Spot préféré : </label>
+        <input type="text" id="spotpref" name="spotpref" ngModel required /> 
+    </div> -->
+    <div class="form-group" ng-class="{'has-error': registerForm.$dirty && registerForm.Password.$invalid, 'has-success': registerForm.Password.$valid}">
+        <input type="submit" class="btn btn-default" value="Sign Up" [disabled]="f.invalid" />
+    </div>
+</form>
