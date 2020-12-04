@@ -1,6 +1,7 @@
+<h1> Connexion </h1>
+
 <div id="connexion-form-div">
     <form (ngSubmit)="onSave(f)" id="connexion-form" #f="ngForm">
-        <h1>Connexion</h1>
         
         <label><b>Nom d'utilisateur</b></label>
         <input type="text" placeholder="Entrer le nom d'utilisateur" name="email" ngModel required><br>
@@ -14,7 +15,5 @@
 
 <div>
     <!--Ajoutez lien de redirection mote d'inscription-->
-    <a href="#"> Toujours pas dans la secte ? </a>
-    <!--Ajoutez lien de redirection mote de passe oublié-->
-    <a href="#"> Code secret oublié ? </a>
-</div> 
+    <a routerLink="/register"> Toujours pas dans la secte ? </a>
+</div>
