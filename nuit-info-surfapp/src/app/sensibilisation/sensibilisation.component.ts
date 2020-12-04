@@ -6,6 +6,7 @@ import { NgForm } from '@angular/forms'
   templateUrl: './sensibilisation.component.html',
   styleUrls: ['./sensibilisation.component.css']
 })
+
 export class SensibilisationComponent implements OnInit {
 
   constructor() { }
