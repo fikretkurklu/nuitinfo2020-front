@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { PageConnexionComponent } from './page-connexion/page-connexion.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { AcceuilComponent } from './acceuil/acceuil.component';
 
 import { PageInscriptionComponent } from './page-inscription/page-inscription.component';
 
@@ -28,7 +29,8 @@ import { SanteComponent } from './sante/sante.component';
     NavbarComponent,
     photoprofilComponent,
     InfopageComponent,
-    SanteComponent
+    SanteComponent,
+    AcceuilComponent
   ],
   imports: [
     BrowserModule,
