@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PageConnexionComponent } from './page-connexion/page-connexion.component';
+import { SensibilisationComponent } from './sensibilisation/sensibilisation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PageConnexionComponent
+    PageConnexionComponent,
+    SensibilisationComponent
   ],
   imports: [
     BrowserModule,
