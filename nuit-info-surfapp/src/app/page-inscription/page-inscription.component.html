@@ -1,4 +1,11 @@
-<h1> Inscription </h1>
+<body>
+    
+    <div class="header">
+        <div ><img style="width: 200px;height: 200px;margin : 80 80 80 80 " src="../assets/2.png" alt="logo"></div>
+        <div class="bigtitle"></div>
+    </div>
+
+    <h1> Inscription </h1>
 
 <form (ngSubmit)="onSave(f)" id="inscription-form" #f="ngForm">
     <div>
@@ -48,3 +55,11 @@
         <input type="submit" class="btn btn-default" value="Sign Up" [disabled]="f.invalid" />
     </div>
 </form>
+
+    <div class="pagecontent">
+        <router-outlet></router-outlet>
+        
+    </div>
+    <div style="height: 600px;"></div>
+
+</body>
