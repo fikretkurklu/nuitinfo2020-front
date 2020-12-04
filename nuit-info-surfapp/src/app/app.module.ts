@@ -7,11 +7,15 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { PageInscriptionComponent } from './page-inscription/page-inscription.component';
 
+import { NavbarComponent } from './navbar/navbar.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     PageConnexionComponent,
-    PageInscriptionComponent
+    PageInscriptionComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
