@@ -1,0 +1,5 @@
+body {
+    background-image: url("https://scontent-cdg2-1.xx.fbcdn.net/v/t1.15752-9/128400592_404295980723598_5956151085144384933_n.jpg?_nc_cat=104&ccb=2&_nc_sid=ae9488&_nc_ohc=rijHl7acpwsAX94FS_V&_nc_ht=scontent-cdg2-1.xx&oh=76439dee1e9265b6036b54334061b728&oe=5FED1567");
+    background-repeat: no-repeat ; /*pas de répition de l'image*/
+    background-attachment: fixed ;
+   }
