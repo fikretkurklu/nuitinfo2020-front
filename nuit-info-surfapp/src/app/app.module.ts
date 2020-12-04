@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { PageConnexionComponent } from './page-connexion/page-connexion.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { SanteComponent } from './sante/sante.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PageConnexionComponent
+    PageConnexionComponent,
+    SanteComponent
   ],
   imports: [
     BrowserModule,
