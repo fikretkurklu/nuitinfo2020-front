@@ -7,15 +7,16 @@ import { LoginIdentifiantService } from '../login-identifiant.service';
   templateUrl: './page-connexion.component.html',
   styleUrls: ['./page-connexion.component.css']
 })
+
 export class PageConnexionComponent implements OnInit {
 
-  constructor(private loginService : LoginIdentifiantService) { }
+  constructor(private login : LoginIdentifiantService) { }
 
   ngOnInit(): void {
   }
 
   onSave(form: NgForm) {
-    this.loginService.login(form.value['email'], form.value['password']);
+    this.login.login(form.value['email'], form.value['password']);
   }
 
 }
