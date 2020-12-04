@@ -12,6 +12,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 
 import { photoprofilComponent } from './photoprofil/photoprofil.component';
 
+import { InfopageComponent } from './infopage/infopage.component';
+
+
 
 @NgModule({
   declarations: [
@@ -19,13 +22,15 @@ import { photoprofilComponent } from './photoprofil/photoprofil.component';
     PageConnexionComponent,
     PageInscriptionComponent,
     NavbarComponent,
-    photoprofilComponent
+    photoprofilComponent,
+    InfopageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
