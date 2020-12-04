@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms'
 
 @Component({
   selector: 'app-sensibilisation',
@@ -10,6 +11,12 @@ export class SensibilisationComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSave(form: NgForm){
+    console.log(form.value['ville']);
+    
+
   }
 
 }

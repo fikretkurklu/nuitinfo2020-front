@@ -1,91 +1,97 @@
-<form action="/ma-page-de-traitement" method="post">
-    <div>
-        <label for="ville">Ville : </label>
-        <input type="text" id="ville" name="ville" required /> 
-    </div>
-    <div>
-        <label for="spot">Spot / Plage : </label>
-        <input type="text" id="spot" name="spot" required /> 
-    </div>
-    <!-- si on abandonne les barres
-    <div>
-        <label for="nbbaigneur">nombre de baigneur : </label>
-        <select name="niveaunb" id="niveaunb">
-            <option value="faible">faible</option>
-            <option value="modéré">modéré</option>
-            <option value="élevé">élevé</option>
-            <option value="trés élevé">trés élevé</option>
-            <option value="extrême">extrême</option>
-        </select>
-    </div>
-    <div>
-        <label for="nbpratiquant">nombre de pratiquant : </label>
-        <select name="niveaunb" id="niveaunb">
-            <option value="faible">faible</option>
-            <option value="modéré">modéré</option>
-            <option value="élevé">élevé</option>
-            <option value="trés élevé">trés élevé</option>
-            <option value="extrême">extrême</option>
-        </select>
-    </div>
-    <div>
-        <label for="nbbateau">nombre de bâteau : </label>
-        <select name="niveaunb" id="niveaunb">
-            <option value="faible">faible</option>
-            <option value="modéré">modéré</option>
-            <option value="élevé">élevé</option>
-            <option value="trés élevé">trés élevé</option>
-            <option value="extrême">extrême</option>
-        </select>
-    </div>
-    <div>
-        <label for="polutioneau">Comment était la polution de l'eau : </label>
-        <select name="niveaunb" id="niveaunb">
-            <option value="faible">faible</option>
-            <option value="modéré">modéré</option>
-            <option value="élevé">élevé</option>
-            <option value="trés élevé">trés élevé</option>
-            <option value="extrême">extrême</option>
-        </select>
-    </div>
-    <div>
-        <label for="polutioneau">Comment était la polution de la plage : </label>
-        <select name="niveaunb" id="niveaunb">
-            <option value="faible">faible</option>
-            <option value="modéré">modéré</option>
-            <option value="élevé">élevé</option>
-            <option value="trés élevé">trés élevé</option>
-            <option value="extrême">extrême</option>
-        </select>
-    </div>-->
-    <div>
-        <label for="spot">INFLUENCE : </label>
-    </div>
-    <div class="slidecontainer">
-        <label for="polutioneau" align = left>nombre de pratiquants : </label  >
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange" align =right>
-    </div>
-    <div class="slidecontainer">
-        <label for="polutioneau" align = left>nombre de baigneurs : </label  >
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange" align =right>
-    </div>
-    <div class="slidecontainer">
-        <label for="polutioneau" align = left>nombre de bâteaux : </label  >
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange" align =right>
-      </div>
-    <div>
-      <label for="spot">POLUTION : </label>
-    </div>
-    <div class="slidecontainer">
-        <label for="polutioneau" align = left>Comment était la polution de l'eau ? </label  >
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange" align =right>
-      </div>
-    <div class="slidecontainer">
-        <label for="polutioneau" align = left>Comment était la polution de la plage ? </label  >
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange" align =right>
-    </div>
-    <div class="slidecontainer">
-        <label for="polutioneau" align = left>Combien de déchet as-tu ramassé ? </label  >
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange" align =right>
-    </div>
-</form>
+<div>
+    <form (ngSubmit)="onSave(f)" id="information-plage" #f="ngForm">
+        <div>
+            <label for="ville">Ville : </label>
+            <input type="text" id="ville" name="ville" ngModel required /> 
+        </div>
+        <div>
+            <label for="spot">Spot / Plage : </label>
+            <input type="text" id="spot" name="spot" ngModel required /> 
+        </div>
+
+        <!-- si on abandonne les barres
+        <div>
+            <label for="nbbaigneur">nombre de baigneur : </label>
+            <select name="niveaunb" id="niveaunb">
+                <option value="faible">faible</option>
+                <option value="modéré">modéré</option>
+                <option value="élevé">élevé</option>
+                <option value="trés élevé">trés élevé</option>
+                <option value="extrême">extrême</option>
+            </select>
+        </div>
+        <div>
+            <label for="nbpratiquant">nombre de pratiquant : </label>
+            <select name="niveaunb" id="niveaunb">
+                <option value="faible">faible</option>
+                <option value="modéré">modéré</option>
+                <option value="élevé">élevé</option>
+                <option value="trés élevé">trés élevé</option>
+                <option value="extrême">extrême</option>
+            </select>
+        </div>
+        <div>
+            <label for="nbbateau">nombre de bâteau : </label>
+            <select name="niveaunb" id="niveaunb">
+                <option value="faible">faible</option>
+                <option value="modéré">modéré</option>
+                <option value="élevé">élevé</option>
+                <option value="trés élevé">trés élevé</option>
+                <option value="extrême">extrême</option>
+            </select>
+        </div>
+        <div>
+            <label for="polutioneau">Comment était la polution de l'eau : </label>
+            <select name="niveaunb" id="niveaunb">
+                <option value="faible">faible</option>
+                <option value="modéré">modéré</option>
+                <option value="élevé">élevé</option>
+                <option value="trés élevé">trés élevé</option>
+                <option value="extrême">extrême</option>
+            </select>
+        </div>
+        <div>
+            <label for="polutioneau">Comment était la polution de la plage : </label>
+            <select name="niveaunb" id="niveaunb">
+                <option value="faible">faible</option>
+                <option value="modéré">modéré</option>
+                <option value="élevé">élevé</option>
+                <option value="trés élevé">trés élevé</option>
+                <option value="extrême">extrême</option>
+            </select>
+        </div>-->
+        <div>
+            <label for="spot">INFLUENCE : </label>
+        </div>
+        <div class="slidecontainer">
+            <label for="polutioneau" align = left>nombre de pratiquants : </label  >
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" align =right>
+        </div>
+        <div class="slidecontainer">
+            <label for="polutioneau" align = left>nombre de baigneurs : </label  >
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" align =right>
+        </div>
+        <div class="slidecontainer">
+            <label for="polutioneau" align = left>nombre de bâteaux : </label  >
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" align =right>
+        </div>
+        <div>
+        <label for="spot">POLUTION : </label>
+        </div>
+        <div class="slidecontainer">
+            <label for="polutioneau" align = left>Comment était la polution de l'eau ? </label  >
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" align =right>
+        </div>
+        <div class="slidecontainer">
+            <label for="polutioneau" align = left>Comment était la polution de la plage ? </label  >
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" align =right>
+        </div>
+        <div class="slidecontainer">
+            <label for="polutioneau" align = left>Combien de déchet as-tu ramassé ? </label  >
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" align =right>
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+</div>
