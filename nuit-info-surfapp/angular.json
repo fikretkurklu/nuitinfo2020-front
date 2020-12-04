@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "nuit-info-surfapp"
+  "defaultProject": "nuit-info-surfapp",
+  "cli": {
+    "analytics": "dfa87667-159a-4a74-a4ee-2a5f6d9af92c"
+  }
 }
