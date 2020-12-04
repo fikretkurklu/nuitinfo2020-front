@@ -6,12 +6,14 @@ import { PageConnexionComponent } from './page-connexion/page-connexion.componen
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { PageInscriptionComponent } from './page-inscription/page-inscription.component';
+import { MeteoComponent } from './meteo/meteo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PageConnexionComponent,
-    PageInscriptionComponent
+    PageInscriptionComponent,
+    MeteoComponent
   ],
   imports: [
     BrowserModule,
