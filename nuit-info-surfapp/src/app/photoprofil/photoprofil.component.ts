@@ -7,10 +7,9 @@ import { Component, OnInit } from '@angular/core';
   
 })
 export class photoprofilComponent implements OnInit {
-<<<<<<< HEAD
+
   profilePicture: string = 'ajout';
-=======
->>>>>>> origin/sante
+
 
   constructor() { 
   }
