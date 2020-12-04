@@ -22,6 +22,8 @@ import { InfopageComponent } from './infopage/infopage.component';
 
 import { SanteComponent } from './sante/sante.component';
 
+import { SensibilisationComponent } from './sensibilisation/sensibilisation.component';
+
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { SanteComponent } from './sante/sante.component';
     SanteComponent,
     AcceuilComponent,
     WebcamComponent,
-    MeteoComponent
+    MeteoComponent,
+    SensibilisationComponent
+
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,7 @@ import { photoprofilComponent } from './photoprofil/photoprofil.component';
 import { InfopageComponent } from './infopage/infopage.component';
 import { WebcamComponent } from './webcam/webcam.component';
 import { MeteoComponent } from './meteo/meteo.component';
+import { SensibilisationComponent } from './sensibilisation/sensibilisation.component';
 
 const routes: Routes = [
   { path : 'acceuil', component : AcceuilComponent },
@@ -21,7 +22,8 @@ const routes: Routes = [
   { path : 'page-connexion', component : PageConnexionComponent },
   { path : 'page-inscription', component : PageInscriptionComponent },
   { path : 'webcam', component : WebcamComponent },
-  { path : 'meteo', component : MeteoComponent }
+  { path : 'meteo', component : MeteoComponent },
+  { path : 'sensibilisation', component : SensibilisationComponent }
 ]
 
 @NgModule({
