@@ -16,37 +16,3 @@ img {
   position: absolute;
   z-index: 1;
 }
-.button {
-  background-color: #00c4cc; /* Green */
-  position: relative;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin-top: 2%;
-  left: 90%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  cursor: pointer;
-}
-.button2 {
-  background-color: #00c4cc; /* Green */
-  position: relative;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin-top: 2%;
-  left: 71%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  cursor: pointer;
-}
