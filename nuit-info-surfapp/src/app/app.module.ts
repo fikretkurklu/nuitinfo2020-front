@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AcceuilComponent } from './acceuil/acceuil.component';
 
 import { PageInscriptionComponent } from './page-inscription/page-inscription.component';
+import { MeteoComponent } from './meteo/meteo.component';
 
 import { NavbarComponent } from './navbar/navbar.component';
 
@@ -32,8 +33,8 @@ import { SanteComponent } from './sante/sante.component';
     InfopageComponent,
     SanteComponent,
     AcceuilComponent,
-    WebcamComponent
-
+    WebcamComponent,
+    MeteoComponent
   ],
   imports: [
     BrowserModule,
