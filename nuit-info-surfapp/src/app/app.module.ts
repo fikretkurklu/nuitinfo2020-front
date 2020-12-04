@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { PageConnexionComponent } from './page-connexion/page-connexion.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+
 import { PageInscriptionComponent } from './page-inscription/page-inscription.component';
 
 import { NavbarComponent } from './navbar/navbar.component';
@@ -16,6 +17,9 @@ import { InfopageComponent } from './infopage/infopage.component';
 
 
 
+import { SanteComponent } from './sante/sante.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +27,8 @@ import { InfopageComponent } from './infopage/infopage.component';
     PageInscriptionComponent,
     NavbarComponent,
     photoprofilComponent,
-    InfopageComponent
+    InfopageComponent,
+    SanteComponent
   ],
   imports: [
     BrowserModule,
